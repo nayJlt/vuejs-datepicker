@@ -518,7 +518,7 @@
           this.typedDate = null;
         }
 
-        this.$emit('closeCalendar');
+        this.$emit('closeCalendar', true);
       },
       /**
        * emit a clearDate event
@@ -1372,6 +1372,7 @@
           return this.close(true)
         }
         this.setInitialView();
+        this.$emit('opened');
       },
       /**
        * Sets the initial picker page view: day, month or year
