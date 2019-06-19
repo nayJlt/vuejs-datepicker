@@ -228,7 +228,7 @@ export default {
         this.typedDate = null
       }
 
-      this.$emit('closeCalendar')
+      this.$emit('closeCalendar', true)
     },
     /**
      * emit a clearDate event
